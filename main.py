@@ -1,6 +1,7 @@
 from tkinter import *
 import tkinter as tk
 from tkinter import messagebox
+import webbrowser
 
 
 username = input("set your username: ")
@@ -21,6 +22,15 @@ def Ok():
 
     else:
             messagebox.showinfo("", "Incorrent Username and Password")
+
+
+def callback(url):
+    webbrowser.open_new("https://youtu.be/dQw4w9WgXcQ")
+
+root = Tk()
+link1 = Label(root, text="Google Hyperlink", fg="blue", cursor="hand2")
+link1.pack()
+link1.bind("<Button-1>", lambda e: callback("https://youtu.be/dQw4w9WgXcQ"))
 
 
 root = Tk()
