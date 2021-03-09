@@ -1,3 +1,6 @@
+username = input("set your username: ")
+password = input("set your password: ")
+
 u_name = input("enter your username: ")
 while u_name != username:
     print("try again")
