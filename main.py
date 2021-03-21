@@ -15,9 +15,11 @@ def Ok():
     if(uname == "" and pword == ""):
             messagebox.showinfo("", "Blank Not allowed")
 
-    elif(uname == username and pword== password):
+    elif(uname == username and pword == password):
 
             messagebox.showinfo("", "Login Success")
+            ruut = Tk()
+            ruut.title("Understandable")
             root.destroy()
 
     else:
