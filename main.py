@@ -1,11 +1,13 @@
 from tkinter import *
 import tkinter as tk
 from tkinter import messagebox
-import webbrowser
-
+import webbrowser 
+import stdiomask
 
 username = input("set your username: ")
-password = input("set a password: ")
+
+password = stdiomask.getpass("set your password: ",mask = "*")
+
 
 def Ok():
 
